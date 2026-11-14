@@ -1,6 +1,6 @@
 # CNN Weight Repair in PyTorch
 
-How much accuracy can a CNN recover on blurred images when a language model edits just six classifier biases? This experiment starts from a CNN trained on clean Fashion-MNIST and compares direct bias edits with Adam fine-tuning and matched random edits.
+How much accuracy can a CNN recover on blurred images by changing six classifier biases? This PyTorch experiment compares a patch proposed by ChatGPT with Adam fine-tuning and matched random edits. It was inspired by the MIT CSAIL research post [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/).
 
 [Open the training notebook in Colab](https://colab.research.google.com/github/Ahmad3752/cnn-weight-repair-pytorch/blob/main/CNN_Weight_Repair_Fashion_MNIST.ipynb) or [browse it on GitHub](CNN_Weight_Repair_Fashion_MNIST.ipynb).
 
@@ -34,4 +34,4 @@ The recorded scores came from the Colab training and evaluation run. PyTorch ver
 4. Fit the Adam comparison on blurred adaptation features with the encoder frozen. Select the best Adam epoch using blurred validation accuracy. Ask ChatGPT to propose one six-bias patch from the adaptation errors. Generate 30 random controls with the same six absolute edit magnitudes, random target biases, and random signs.
 5. Freeze the methods before evaluating them on the same 10,000 official test images in clean and blurred form.
 
-The LLM patch is a single manual proposal. Its six values are recorded in `results/llm_patch.json`. The experiment covers one trained CNN and one fixed blur setting. Comparing against an Adam run that can edit only the same six biases would help isolate the effect of the update method from the number and location of parameters it can edit.
+ChatGPT helped build the notebook and proposed the six offsets after seeing the adaptation errors. The offsets were fixed before evaluating the patch and are recorded in `results/llm_patch.json`. The notebook prints each bias before and after the edit. The experiment covers one trained CNN and one fixed blur setting. An Adam run limited to the same six biases would give a closer comparison.
