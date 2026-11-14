@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+data/
+fashion_mnist_runs/
+replay_results.csv

@@ -1,0 +1,34 @@
+method,seed,clean_accuracy_pct,blurred_accuracy_pct,changed_head_parameters
+Original CNN,,86.11,65.12,0
+Adam head fine-tuning,,76.6,78.31,180
+ChatGPT direct bias edit,,83.67999999999999,71.12,6
+Matched random edit,100,84.04,62.08,6
+Matched random edit,101,85.58,66.07,6
+Matched random edit,102,85.46000000000001,59.309999999999995,6
+Matched random edit,103,83.35000000000001,63.839999999999996,6
+Matched random edit,104,85.72999999999999,66.8,6
+Matched random edit,105,84.22,54.99000000000001,6
+Matched random edit,106,85.57000000000001,60.35,6
+Matched random edit,107,86.04,62.67,6
+Matched random edit,108,84.74000000000001,61.47,6
+Matched random edit,109,84.11,63.22,6
+Matched random edit,110,85.9,63.01,6
+Matched random edit,111,85.13,59.830000000000005,6
+Matched random edit,112,84.54,60.699999999999996,6
+Matched random edit,113,85.96000000000001,64.47,6
+Matched random edit,114,86.32,61.0,6
+Matched random edit,115,86.66,63.449999999999996,6
+Matched random edit,116,84.57000000000001,68.89,6
+Matched random edit,117,86.61,62.4,6
+Matched random edit,118,85.55,61.06,6
+Matched random edit,119,83.82,57.34,6
+Matched random edit,120,85.74000000000001,61.53999999999999,6
+Matched random edit,121,85.48,62.870000000000005,6
+Matched random edit,122,84.95,66.85,6
+Matched random edit,123,80.56,64.75999999999999,6
+Matched random edit,124,86.91,64.82,6
+Matched random edit,125,86.45,64.56,6
+Matched random edit,126,85.71,59.96,6
+Matched random edit,127,84.04,57.79,6
+Matched random edit,128,84.67,63.54,6
+Matched random edit,129,84.75,66.9,6

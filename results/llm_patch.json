@@ -1,0 +1,37 @@
+{
+  "method": "chatgpt_direct_bias_edit",
+  "base_sha256": "35634d070b33aa47dfb7debece7126c2f943016cc354625398db413596018acf",
+  "parameter": "classifier.bias",
+  "edits": [
+    {
+      "class_id": 0,
+      "delta": -0.7,
+      "class_name": "T-shirt/top"
+    },
+    {
+      "class_id": 1,
+      "delta": 0.45,
+      "class_name": "Trouser"
+    },
+    {
+      "class_id": 4,
+      "delta": -0.15,
+      "class_name": "Coat"
+    },
+    {
+      "class_id": 5,
+      "delta": 1.25,
+      "class_name": "Sandal"
+    },
+    {
+      "class_id": 6,
+      "delta": 0.75,
+      "class_name": "Shirt"
+    },
+    {
+      "class_id": 7,
+      "delta": -0.25,
+      "class_name": "Sneaker"
+    }
+  ]
+}
